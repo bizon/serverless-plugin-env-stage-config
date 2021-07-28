@@ -1,6 +1,6 @@
 # serverless-plugin-env-stage-config
 
-This [Serverless][http://www.serverless.com/] plugin allows to define environment variable configuration files for stages.
+This [Serverless](http://www.serverless.com/) plugin allows to define environment variable configuration files for stages.
 It exposes a new variable resolver (`$esc`) that automatically picks the correct value based on the selected stage.
 For development stages (`local`, `dev`, `development`), the variables will default to the system’s environment variables.
 
