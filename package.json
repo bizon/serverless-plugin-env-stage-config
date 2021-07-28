@@ -1,0 +1,32 @@
+{
+  "name": "serverless-plugin-env-stage-config",
+  "version": "1.0.0-rc.1",
+  "author": "Bertrand Marron <bertrand.marron@gmail.com>",
+  "description": "Serverless plugin to define environment variables files for stages",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "lint": "xo --version && xo"
+  },
+  "repository": "https://github.com/bizon/serverless-plugin-stage-config",
+  "license": "MIT",
+  "keywords": [
+    "serverless",
+    "serverless-plugin"
+  ],
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  },
+  "devDependencies": {
+    "xo": "^0.39.1"
+  },
+  "xo": {
+    "semicolon": false,
+    "space": 2
+  }
+}
