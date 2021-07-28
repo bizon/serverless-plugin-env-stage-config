@@ -40,7 +40,7 @@ functions:
       SECRET_TOKEN: ${esc:SECRET_TOKEN}
 ```
 
-# Local stages
+## Local stages
 
 In a local environment, the variables resolved with the `esc:` prefix will be equivalent to using `env:`. Using `useDotenv: true` alongside a `.env` file will alow you to define your environement variables in the environement.
 
@@ -49,7 +49,7 @@ The support local stages are:
 - dev
 - development
 
-# Other stages
+## Other stages
 
 If you need to define a different source for the environement variables for your `prod` stage, you can define a `serverless.env.prod.yml` to redefine the variables.
 
