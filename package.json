@@ -23,10 +23,26 @@
     "js-yaml": "^4.1.0"
   },
   "devDependencies": {
+    "@semantic-release/git": "^9.0.0",
+    "semantic-release": "^17.4.4",
     "xo": "^0.39.1"
   },
   "xo": {
     "semicolon": false,
     "space": 2
+  },
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/github",
+      "@semantic-release/npm",
+      [
+        "@semantic-release/git",
+        {
+          "message": "chore(release): ${nextRelease.gitTag}"
+        }
+      ]
+    ]
   }
 }
