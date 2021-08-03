@@ -42,14 +42,14 @@ class EnvStageConfigServerlessPlugin {
       }
 
       this.serverless.cli.log(
-        `env-stage-config: WARNING: the ${address} variable is not defined in serverless.env.${this.stage}.yml, defaulting to \${env:${address}}.`,
+        `env-stage-config: WARNING: the ${address} variable is not defined in serverless.env.${this.stage}.yml, defaulting to \${env:${address}, null}.`,
         null,
         {color: 'orange'}
       )
     }
 
     return {
-      value: `\${env:${address}}`
+      value: `\${env:${address}, null}`
     }
   }
 }
