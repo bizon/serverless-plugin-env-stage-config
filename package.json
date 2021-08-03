@@ -26,7 +26,7 @@
   "devDependencies": {
     "@semantic-release/git": "^9.0.0",
     "semantic-release": "^17.4.4",
-    "xo": "^0.39.1"
+    "xo": "^0.42.0"
   },
   "xo": {
     "semicolon": false,
