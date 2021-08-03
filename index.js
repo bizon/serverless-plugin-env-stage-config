@@ -1,6 +1,7 @@
 const path = require('path')
 const {readFileSync} = require('fs')
 const yaml = require('js-yaml')
+const cloudformationSchema = require('@serverless/utils/cloudformation-schema')
 
 const developmentStages = new Set([
   'local',
@@ -24,7 +25,10 @@ class EnvStageConfigServerlessPlugin {
       this.stageVariables = yaml.load(
         readFileSync(
           path.join(this.serverless.serviceDir, `serverless.env.${this.stage}.yml`)
-        )
+        ),
+        {
+          schema: cloudformationSchema
+        }
       )
     }
   }
