@@ -26,6 +26,13 @@ name: my-service
 
 useDotenv: true
 
+resources:
+  Resources:
+    MyQueue:
+      Type: AWS::SQS::Queue
+      Properties:
+        QueueName: some-queue
+
 provider:
   name: aws
 
@@ -37,12 +44,13 @@ functions:
   run-something:
     handler: handler.run
     environment:
+      QUEUE_URL: ${esc:QUEUE_URL}
       SECRET_TOKEN: ${esc:SECRET_TOKEN}
 ```
 
 ## Local stages
 
-In a local environment, the variables resolved with the `esc:` prefix will be equivalent to using `env:`. Using `useDotenv: true` alongside a `.env` file will alow you to define your environement variables in the environement.
+In a local environment, the variables resolved with the `esc:` prefix will be equivalent to using `env:`. Using `useDotenv: true` alongside a `.env` file will alow you to define your environement variables.
 
 The support local stages are:
 - local
@@ -57,6 +65,7 @@ For example, if you’re using AWS SSM Parameter Store, you could create the fol
 
 ```yaml
 MYSQL_HOST: ${ssm:/my-service/prod/MYSQL_HOST~true}
+QUEUE_URL: !Ref MyQueue
 SECRET_TOKEN: ${ssm:/my-service/prod/SECRET_TOKEN~true}
 ```
 
