@@ -72,7 +72,9 @@ SECRET_TOKEN: ${ssm:/my-service/prod/SECRET_TOKEN~true}
 Any variable that is not included in the `serverless.env.prod.yml` file will produce a warning and fallback to using `env:`.
 In this case, you will get the following warning:
 
-> Serverless: env-stage-config: WARNING: the MYSQL_PORT variable is not defined in serverless.env.prod.yml, defaulting to ${env:MYSQL_PORT}.
+> Serverless: env-stage-config: WARNING: the MYSQL_PORT variable is not defined in serverless.env.prod.yml, defaulting to ${env:MYSQL_PORT, null}.
+
+If a variable is not defined in the stage environment configuration file, or the environment (`process.env`), it will default to `null`.
 
 ## License
 
