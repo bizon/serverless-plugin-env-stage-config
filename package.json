@@ -26,11 +26,14 @@
   "devDependencies": {
     "@semantic-release/git": "^9.0.0",
     "semantic-release": "^17.4.4",
-    "xo": "^0.39.1"
+    "xo": "^0.44.0"
   },
   "xo": {
     "semicolon": false,
-    "space": 2
+    "space": 2,
+    "rules": {
+      "unicorn/prefer-module": "off"
+    }
   },
   "release": {
     "plugins": [

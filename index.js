@@ -6,7 +6,7 @@ const cloudformationSchema = require('@serverless/utils/cloudformation-schema')
 const developmentStages = new Set([
   'local',
   'development',
-  'dev'
+  'dev',
 ])
 
 class EnvStageConfigServerlessPlugin {
@@ -17,19 +17,16 @@ class EnvStageConfigServerlessPlugin {
 
     this.configurationVariablesSources = {
       esc: {
-        resolve: this.resolveConfigVariable.bind(this)
-      }
+        resolve: this.resolveConfigVariable.bind(this),
+      },
     }
 
     if (!developmentStages.has(this.stage)) {
-      this.stageVariables = yaml.load(
-        readFileSync(
-          path.join(this.serverless.serviceDir, `serverless.env.${this.stage}.yml`)
-        ),
-        {
-          schema: cloudformationSchema
-        }
-      )
+      const stageConfigYaml = readFileSync(path.join(this.serverless.serviceDir, `serverless.env.${this.stage}.yml`))
+
+      this.stageVariables = yaml.load(stageConfigYaml, {
+        schema: cloudformationSchema,
+      })
     }
   }
 
@@ -37,19 +34,19 @@ class EnvStageConfigServerlessPlugin {
     if (this.stageVariables) {
       if (address in this.stageVariables) {
         return {
-          value: this.stageVariables[address]
+          value: this.stageVariables[address],
         }
       }
 
       this.serverless.cli.log(
         `env-stage-config: WARNING: the ${address} variable is not defined in serverless.env.${this.stage}.yml, defaulting to \${env:${address}, null}.`,
         null,
-        {color: 'orange'}
+        {color: 'orange'},
       )
     }
 
     return {
-      value: `\${env:${address}, null}`
+      value: `\${env:${address}, null}`,
     }
   }
 }
