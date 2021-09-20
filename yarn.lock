@@ -630,14 +630,14 @@
     read-pkg-up "^7.0.0"
 
 "@serverless/utils@^5.6.0":
-  version "5.11.0"
-  resolved "https://registry.yarnpkg.com/@serverless/utils/-/utils-5.11.0.tgz#9d03170eb93ceffd8fd9854d7534ec037b1a3e60"
-  integrity sha512-If0WtoF0AGVjNs9zUFyvQtHt/4/UPjAlHf7gFwkxZwL6C+tUgJp+mSPIjvHUVS3NQQNGJWenaXoooEWay/cIiQ==
+  version "5.13.0"
+  resolved "https://registry.yarnpkg.com/@serverless/utils/-/utils-5.13.0.tgz#6a9d54d28f85ce41c6bc558cb4c104543c7f0d14"
+  integrity sha512-fsE+i/I9gBWbb7xed+OBnVNhXne2ti3fT/Ck6a87UldKgsoVGizY/j65B8SW7JMHijDX1OdFBUIpnP7uWFefhQ==
   dependencies:
     archive-type "^4.0.0"
     chalk "^4.1.2"
     ci-info "^3.2.0"
-    cli-progress-footer "^2.0.0"
+    cli-progress-footer "^2.0.2"
     content-disposition "^0.5.3"
     decompress "^4.2.1"
     event-emitter "^0.3.5"
@@ -1406,10 +1406,10 @@ cli-cursor@^3.1.0:
   dependencies:
     restore-cursor "^3.1.0"
 
-cli-progress-footer@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/cli-progress-footer/-/cli-progress-footer-2.0.1.tgz#e9cc967f455e5358fb93bd604308ea6db103fdd8"
-  integrity sha512-q6AqsQavxkq16iQ29Gt1UjV6SnSeO1w7FDtSdNve8vXDHWAKpv6MB6kIX6UTBUfoGCU2ZPIjm6S+jbBlQmj3Jw==
+cli-progress-footer@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/cli-progress-footer/-/cli-progress-footer-2.0.2.tgz#f1f4f9c7b8630e3ffae23cd0c6042ac361c025d0"
+  integrity sha512-FQbhQKqyRG463NbIj+XOIODJYNAf6juqIzZ5YvN1+25mvfWw+gdLzN/a64hYLlxr8OUlA5gzgxoqQTyKemko7g==
   dependencies:
     cli-color "^2.0.0"
     d "^1.0.1"
