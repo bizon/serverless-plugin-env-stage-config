@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-env-stage-config",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
   "description": "Serverless plugin to define environment variables files for stages",
   "main": "index.js",
