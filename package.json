@@ -20,7 +20,7 @@
     "serverless-plugin"
   ],
   "dependencies": {
-    "@serverless/utils": "^5.6.0",
+    "@serverless/utils": "^6.0.0",
     "js-yaml": "^4.1.0"
   },
   "devDependencies": {

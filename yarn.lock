@@ -640,10 +640,10 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@serverless/utils@^5.6.0":
-  version "5.20.3"
-  resolved "https://registry.yarnpkg.com/@serverless/utils/-/utils-5.20.3.tgz#5ab15cf8eceb81934946f2deeee028c6b9b6e270"
-  integrity sha512-MG3DQJdto+LaeVY9gh/z0xloAfT0h1Y3Pa4/yYcKe8Dy5HYtSujuav0MvTOH18+s2outjKKJDxTh6tZuyNqFDQ==
+"@serverless/utils@^6.0.0":
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/@serverless/utils/-/utils-6.0.0.tgz#729076e72d2b2d022ba11326bae16552e82fa7ee"
+  integrity sha512-v3zSwwS5u5GbRLKGClrProskIpx9HI1cGztpcp/qh50ULkXa6fTjR8lb7nMS10hOAOvuMcj++Pp5T8xvM7q78w==
   dependencies:
     archive-type "^4.0.0"
     chalk "^4.1.2"
@@ -667,7 +667,7 @@
     log-node "^8.0.3"
     make-dir "^3.1.0"
     memoizee "^0.4.15"
-    ncjsm "^4.2.0"
+    ncjsm "^4.3.0"
     p-event "^4.2.0"
     supports-color "^8.1.1"
     type "^2.5.0"
@@ -4234,15 +4234,16 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
   integrity sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=
 
-ncjsm@^4.2.0:
-  version "4.2.0"
-  resolved "https://registry.yarnpkg.com/ncjsm/-/ncjsm-4.2.0.tgz#7b2d752c3a42db5f6a2c5ff6934cf66fb1bb5e38"
-  integrity sha512-L2Qij4PTy7Bs4TB24zs7FLIAYJTaR5JPvSig5hIcO059LnMCNgy6MfHHNyg8s/aekPKrTqKX90gBGt3NNGvhdw==
+ncjsm@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/ncjsm/-/ncjsm-4.3.0.tgz#ec2301ad67475f414a50de34fae00ebc31527e38"
+  integrity sha512-oah6YGwb4Ern2alojiMFcjPhE4wvQBw1Ur/kUr2P0ovKdzaF5pCIsGjs0f2y+iZeej0/5Y6OOhQ8j30cTDMEGw==
   dependencies:
     builtin-modules "^3.2.0"
     deferred "^0.7.11"
     es5-ext "^0.10.53"
     es6-set "^0.1.5"
+    ext "^1.6.0"
     find-requires "^1.0.0"
     fs2 "^0.3.9"
     type "^2.5.0"
