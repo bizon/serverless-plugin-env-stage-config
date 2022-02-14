@@ -641,9 +641,9 @@
     read-pkg-up "^7.0.0"
 
 "@serverless/utils@^6.0.0":
-  version "6.0.1"
-  resolved "https://registry.yarnpkg.com/@serverless/utils/-/utils-6.0.1.tgz#eb8ff9c843fe9f1b9a1ec3d2dd2f26df13ff86fd"
-  integrity sha512-09FKKPeM4N+G2hr8wwVHsx5NrlD8Ieicr0rzUrZ+D23mkOSOj4lpimN5kCxF56GRWXUIknW7dj+ypRoxrZzoTQ==
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@serverless/utils/-/utils-6.0.2.tgz#e23e79b5f10e3aba0bd4965d1924df10c77f9681"
+  integrity sha512-4vNv6nt4/w8wX79DN7OujR/Ih1wlJ9ZJnY28BtF69ehFwlGqnxlF2CXVGo3W7Xh4maK3hWnoc+L4akQX6nH+3g==
   dependencies:
     archive-type "^4.0.0"
     chalk "^4.1.2"
