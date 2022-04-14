@@ -52,10 +52,10 @@ functions:
 
 In a local environment, the variables resolved with the `esc:` prefix will be equivalent to using `env:`. Using `useDotenv: true` alongside a `.env` file will alow you to define your environement variables.
 
-The support local stages are:
-- local
-- dev
-- development
+The supported local stages are:
+- `local`
+- `dev`
+- `development`
 
 ## Other stages
 
@@ -64,9 +64,9 @@ If you need to define a different source for the environement variables for your
 For example, if you’re using AWS SSM Parameter Store, you could create the following file:
 
 ```yaml
-MYSQL_HOST: ${ssm:/my-service/prod/MYSQL_HOST~true}
+MYSQL_HOST: ${ssm:/my-service/prod/MYSQL_HOST}
 QUEUE_URL: !Ref MyQueue
-SECRET_TOKEN: ${ssm:/my-service/prod/SECRET_TOKEN~true}
+SECRET_TOKEN: ${ssm:/my-service/prod/SECRET_TOKEN}
 ```
 
 Any variable that is not included in the `serverless.env.prod.yml` file will produce a warning and fallback to using `env:`.
