@@ -8,7 +8,7 @@
     "index.js"
   ],
   "engines": {
-    "node": "14.x"
+    "node": ">=14"
   },
   "scripts": {
     "lint": "xo --version && xo"
@@ -24,7 +24,7 @@
     "js-yaml": "^4.1.0"
   },
   "devDependencies": {
-    "@bizon/semantic-release-config": "^1.0.1",
+    "@bizon/semantic-release-config": "^1.2.0",
     "semantic-release": "^19.0.2",
     "xo": "^0.50.0"
   },
