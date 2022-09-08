@@ -22,15 +22,14 @@
   },
   "devDependencies": {
     "@bizon/semantic-release-config": "^1.2.0",
+    "eslint-config-xo-bizon": "^1.1.1",
     "semantic-release": "^19.0.2",
-    "xo": "^0.51.0"
+    "xo": "^0.52.3"
   },
   "xo": {
+    "extends": "xo-bizon",
     "semicolon": false,
-    "space": 2,
-    "rules": {
-      "unicorn/prefer-module": "off"
-    }
+    "space": 2
   },
   "release": {
     "extends": "@bizon/semantic-release-config"

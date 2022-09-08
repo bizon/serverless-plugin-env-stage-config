@@ -1,7 +1,8 @@
-const path = require('path')
 const {readFileSync} = require('fs')
-const yaml = require('js-yaml')
+const path = require('path')
+
 const cloudformationSchema = require('@serverless/utils/cloudformation-schema')
+const yaml = require('js-yaml')
 
 const developmentStages = new Set([
   'local',
