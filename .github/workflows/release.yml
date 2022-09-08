@@ -1,14 +1,12 @@
 name: Release
 
-on:
-  push:
-    branches:
-      - master
+on: [workflow_dispatch]
 
 jobs:
   release:
     name: Run semantic release
     runs-on: ubuntu-latest
+    timeout-minutes: 10
 
     steps:
       - name: Checkout
@@ -17,13 +15,13 @@ jobs:
           token: ${{ secrets.BOT_GITHUB_TOKEN_PUBLIC }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v3.4.1
+        uses: actions/setup-node@v3
         with:
           node-version: 16
           cache: yarn
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile --non-interactive
+        run: yarn --frozen-lockfile --non-interactive --prefer-offline
 
       - name: Run semantic release
         env:

@@ -10,9 +10,6 @@
   "engines": {
     "node": ">=14"
   },
-  "scripts": {
-    "lint": "xo --version && xo"
-  },
   "repository": "https://github.com/bizon/serverless-plugin-stage-config",
   "license": "MIT",
   "keywords": [
