@@ -465,10 +465,10 @@
     lodash "^4.17.4"
     read-pkg-up "^7.0.0"
 
-"@serverless/utils@^6.8.1":
-  version "6.8.1"
-  resolved "https://registry.yarnpkg.com/@serverless/utils/-/utils-6.8.1.tgz#f1e87298f9aa1bf663c14c4e9bec8e23c7ead4cd"
-  integrity sha512-vMftT3N/aqGdYyUc6T5xotyZTXZMaxchlzFvEXqTIVzJ1nVcNNIlbndCUA5+KCIipX+p60Uoj8d0pW5mtllS2Q==
+"@serverless/utils@^6.8.2":
+  version "6.8.2"
+  resolved "https://registry.yarnpkg.com/@serverless/utils/-/utils-6.8.2.tgz#6ec34e8308b74f219cc80704e417c1a438629dd0"
+  integrity sha512-FW8zdG8OPoF6qgyutiMhz4m/5SxbQjoQdbaGcW3wU6xe3QzQh41Hif7I3Xuu4J62CvxiWuz19sxNDJz2mTcskw==
   dependencies:
     archive-type "^4.0.0"
     chalk "^4.1.2"
