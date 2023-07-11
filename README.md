@@ -15,7 +15,7 @@ For development stages (`local`, `dev`, `development`), the variables will defau
 ## Installation
 
 ```sh
-yarn add --dev serverless-plugin-env-stage-config
+pnpm add -D serverless-plugin-env-stage-config
 ```
 
 ```yaml
@@ -61,6 +61,7 @@ functions:
 In a local environment, the variables resolved with the `esc:` prefix will be equivalent to using `env:`. Using `useDotenv: true` alongside a `.env` file will alow you to define your environement variables.
 
 The supported local stages are:
+
 - `local`
 - `dev`
 - `development`
