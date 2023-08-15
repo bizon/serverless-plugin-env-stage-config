@@ -27,7 +27,7 @@
     "@bizon/semantic-release-config": "^2.1.0",
     "eslint-config-xo-bizon": "^1.2.0",
     "semantic-release": "^21.0.7",
-    "xo": "^0.55.0"
+    "xo": "^0.56.0"
   },
   "xo": {
     "extends": "xo-bizon",
