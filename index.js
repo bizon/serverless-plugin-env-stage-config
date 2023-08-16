@@ -1,5 +1,5 @@
-const {readFileSync} = require('fs')
-const path = require('path')
+const {readFileSync} = require('node:fs')
+const path = require('node:path')
 
 const cloudformationSchema = require('@serverless/utils/cloudformation-schema')
 const yaml = require('js-yaml')
