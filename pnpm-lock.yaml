@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@serverless/utils':
-    specifier: ^6.13.1
-    version: 6.13.1
+    specifier: ^6.15.0
+    version: 6.15.0
   js-yaml:
     specifier: ^4.1.0
     version: 4.1.0
@@ -505,8 +505,8 @@ packages:
       - supports-color
     dev: true
 
-  /@serverless/utils@6.13.1:
-    resolution: {integrity: sha512-yokWzlsIaAd3TWzNgIDz6l8HZmtYZs9caaLuheZ0IiZ/bDWSCLBWn84HKkdWZOmFnYxejyPNJEOwE59mtSR3Ow==}
+  /@serverless/utils@6.15.0:
+    resolution: {integrity: sha512-7eDbqKv/OBd11jjdZjUwFGN8sHWkeUqLeHXHQxQ1azja2IM7WIH+z/aLgzR6LhB3/MINNwtjesDpjGqTMj2JKQ==}
     engines: {node: '>=12.0'}
     dependencies:
       archive-type: 4.0.0
