@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@bizon/semantic-release-config": "^2.1.0",
-    "eslint-config-xo-bizon": "^2.0.0",
+    "eslint-config-xo-bizon": "^3.0.2",
     "semantic-release": "^22.0.8",
     "xo": "^0.56.0"
   },
