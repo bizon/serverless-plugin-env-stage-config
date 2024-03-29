@@ -13,7 +13,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm"
   },
-  "repository": "https://github.com/bizon/serverless-plugin-stage-config",
+  "repository": "https://github.com/bizon/serverless-plugin-env-stage-config",
   "license": "MIT",
   "keywords": [
     "serverless",
