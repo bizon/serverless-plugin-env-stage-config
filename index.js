@@ -10,7 +10,7 @@ const developmentStages = new Set([
   'dev',
 ])
 
-class EnvStageConfigServerlessPlugin {
+class EnvironmentStageConfigServerlessPlugin {
   constructor(serverless, options) {
     this.serverless = serverless
     this.options = options
@@ -52,4 +52,4 @@ class EnvStageConfigServerlessPlugin {
   }
 }
 
-module.exports = EnvStageConfigServerlessPlugin
+module.exports = EnvironmentStageConfigServerlessPlugin
