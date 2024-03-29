@@ -17,8 +17,8 @@ devDependencies:
     specifier: ^2.1.0
     version: 2.1.0(semantic-release@22.0.8)
   eslint-config-xo-bizon:
-    specifier: ^2.0.0
-    version: 2.0.0
+    specifier: ^3.0.3
+    version: 3.0.3
   semantic-release:
     specifier: ^22.0.8
     version: 22.0.8
@@ -2039,9 +2039,9 @@ packages:
       eslint: 8.45.0
     dev: true
 
-  /eslint-config-xo-bizon@2.0.0:
-    resolution: {integrity: sha512-aYoqM6cVqyq7oWKjZjHmJPGT6UdepymOxdYRhDOzGJ5VvfTwN5l16XdnZbM98oGg2AAWto5z2vvuacHQVOTIaQ==}
-    engines: {node: '>=16'}
+  /eslint-config-xo-bizon@3.0.3:
+    resolution: {integrity: sha512-7YjEuIw7PS7uJ9Ynf2wriXyp4FvDC6TocVcqop5MF7bGR2CI+b2UnzqudZ6+9ZjmAsRymF+zvjbbKtHPstCgcQ==}
+    engines: {node: '>=18'}
     dev: true
 
   /eslint-config-xo-typescript@1.0.0(@typescript-eslint/eslint-plugin@6.0.0)(@typescript-eslint/parser@6.0.0)(eslint@8.45.0)(typescript@5.1.6):
