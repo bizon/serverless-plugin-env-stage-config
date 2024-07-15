@@ -3,7 +3,8 @@
   "version": "1.3.8",
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
   "description": "Serverless plugin to define environment variables files for stages",
-  "main": "index.js",
+  "type": "module",
+  "exports": "./index.js",
   "files": [
     "index.js"
   ],
@@ -26,7 +27,7 @@
   "devDependencies": {
     "@bizon/semantic-release-config": "^2.1.0",
     "eslint-config-xo-bizon": "^3.0.3",
-    "semantic-release": "^23.0.6",
+    "semantic-release": "^23.1.1",
     "xo": "^0.58.0"
   },
   "xo": {
@@ -36,5 +37,6 @@
   },
   "release": {
     "extends": "@bizon/semantic-release-config"
-  }
+  },
+  "packageManager": "pnpm@9.3.0"
 }
