@@ -1,8 +1,8 @@
-const {readFileSync} = require('node:fs')
-const path = require('node:path')
+import {readFileSync} from 'node:fs'
+import path from 'node:path'
 
-const cloudformationSchema = require('@serverless/utils/cloudformation-schema')
-const yaml = require('js-yaml')
+import cloudformationSchema from '@serverless/utils/cloudformation-schema.js'
+import yaml from 'js-yaml'
 
 const developmentStages = new Set([
   'local',
@@ -10,7 +10,7 @@ const developmentStages = new Set([
   'dev',
 ])
 
-class EnvironmentStageConfigServerlessPlugin {
+export default class EnvironmentStageConfigServerlessPlugin {
   constructor(serverless, options) {
     this.serverless = serverless
     this.options = options
@@ -52,4 +52,3 @@ class EnvironmentStageConfigServerlessPlugin {
   }
 }
 
-module.exports = EnvironmentStageConfigServerlessPlugin
