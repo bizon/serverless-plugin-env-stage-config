@@ -9,10 +9,7 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=16"
-  },
-  "scripts": {
-    "preinstall": "npx only-allow pnpm"
+    "node": ">=22"
   },
   "repository": "https://github.com/bizon/serverless-plugin-env-stage-config",
   "license": "MIT",
