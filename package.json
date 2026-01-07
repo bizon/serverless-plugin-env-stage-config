@@ -9,7 +9,7 @@
     "index.js"
   ],
   "engines": {
-    "node": ">=22"
+    "node": ">=24"
   },
   "repository": "https://github.com/bizon/serverless-plugin-env-stage-config",
   "license": "MIT",
