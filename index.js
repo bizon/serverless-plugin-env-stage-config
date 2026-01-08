@@ -4,11 +4,7 @@ import path from 'node:path'
 import cloudformationSchema from '@serverless/utils/cloudformation-schema.js'
 import yaml from 'js-yaml'
 
-const developmentStages = new Set([
-  'local',
-  'development',
-  'dev',
-])
+const developmentStages = new Set(['local', 'development', 'dev'])
 
 export default class EnvironmentStageConfigServerlessPlugin {
   constructor(serverless, options) {
@@ -23,7 +19,12 @@ export default class EnvironmentStageConfigServerlessPlugin {
     }
 
     if (!developmentStages.has(this.stage)) {
-      const stageConfigYaml = readFileSync(path.join(this.serverless.serviceDir, `serverless.env.${this.stage}.yml`))
+      const stageConfigYaml = readFileSync(
+        path.join(
+          this.serverless.serviceDir,
+          `serverless.env.${this.stage}.yml`,
+        ),
+      )
 
       this.stageVariables = yaml.load(stageConfigYaml, {
         schema: cloudformationSchema,
@@ -51,4 +52,3 @@ export default class EnvironmentStageConfigServerlessPlugin {
     }
   }
 }
-
