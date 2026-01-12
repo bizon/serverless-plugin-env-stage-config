@@ -20,10 +20,7 @@ export default class EnvironmentStageConfigServerlessPlugin {
 
     if (!developmentStages.has(this.stage)) {
       const stageConfigYaml = readFileSync(
-        path.join(
-          this.serverless.serviceDir,
-          `serverless.env.${this.stage}.yml`,
-        ),
+        path.join(this.serverless.serviceDir, `serverless.env.${this.stage}.yml`),
       )
 
       this.stageVariables = yaml.load(stageConfigYaml, {
