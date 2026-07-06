@@ -1,8 +1,9 @@
 import {readFileSync} from 'node:fs'
 import path from 'node:path'
 
-import cloudformationSchema from '@serverless/utils/cloudformation-schema.js'
 import yaml from 'js-yaml'
+
+import cloudformationSchema from './cloudformation-schema.js'
 
 const developmentStages = new Set(['local', 'development', 'dev'])
 
