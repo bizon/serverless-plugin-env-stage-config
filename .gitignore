@@ -1,2 +1,6 @@
-# Package directories
-node_modules
+node_modules/
+coverage/
+reports/
+junit.xml
+
+dist/

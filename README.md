@@ -3,17 +3,18 @@
 [![npm version](https://badgen.net/npm/v/serverless-plugin-env-stage-config)](https://www.npmjs.com/package/serverless-plugin-env-stage-config)
 [![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
 
-This [Serverless](https://github.com/oss-serverless/serverless) plugin allows to define environment variable configuration files for stages.
+This plugin for [**osls**](https://github.com/oss-serverless/osls) (Open Source ServerLeSs) lets you define environment variable configuration files for stages.
 It exposes a new variable resolver (`$esc`) that automatically picks the correct value based on the selected stage.
 For development stages (`local`, `dev`, `development`), the variables will default to the system’s environment variables.
 
-> [!NOTE]  
-> This plugin is designed for [Serverless Framework v3](https://github.com/oss-serverless/serverless) (published as [`osls`](https://www.npmjs.com/package/osls) on npm), which is a maintained fork of the original Serverless project.
+> [!IMPORTANT]
+> This plugin targets [**osls**](https://github.com/oss-serverless/osls) — the community-maintained fork of Serverless Framework v3, published as [`osls`](https://www.npmjs.com/package/osls) on npm. The `$esc` resolver relies on the v3 configuration-variables-sources API.
 
 ## CI
 
 [![Tests](https://github.com/bizon/serverless-plugin-env-stage-config/actions/workflows/tests.yml/badge.svg)](https://github.com/bizon/serverless-plugin-env-stage-config/actions/workflows/tests.yml)
 [![Release](https://github.com/bizon/serverless-plugin-env-stage-config/actions/workflows/release.yml/badge.svg)](https://github.com/bizon/serverless-plugin-env-stage-config/actions/workflows/release.yml)
+[![codecov](https://codecov.io/github/bizon/serverless-plugin-env-stage-config/graph/badge.svg?token=jtThT4jmen)](https://codecov.io/github/bizon/serverless-plugin-env-stage-config)
 
 ## Installation
 
@@ -94,7 +95,7 @@ MIT
 
 ## Miscellaneous
 
-```
+```text
     ╚⊙ ⊙╝
   ╚═(███)═╝
  ╚═(███)═╝

@@ -25,15 +25,19 @@ const functionNames = [
   'Sub',
 ]
 
-const yamlType = (name, kind) => {
-  const functionName = ['Ref', 'Condition'].includes(name) ? name : `Fn::${name}`
+type YamlKind = 'mapping' | 'scalar' | 'sequence'
+
+const kinds: YamlKind[] = ['mapping', 'scalar', 'sequence']
+
+const yamlType = (name: string, kind: YamlKind) => {
+  const functionName = name === 'Ref' || name === 'Condition' ? name : `Fn::${name}`
   return new yaml.Type(`!${name}`, {
     kind,
-    construct(data) {
+    construct(data: unknown) {
       // Special GetAtt dot syntax: `!GetAtt Resource.Attribute`
       if (name === 'GetAtt' && typeof data === 'string') {
         const [first, ...tail] = data.split('.')
-        data = [first, tail.join('.')]
+        return {[functionName]: [first, tail.join('.')]}
       }
 
       return {[functionName]: data}
@@ -42,9 +46,7 @@ const yamlType = (name, kind) => {
 }
 
 const types = functionNames.flatMap((functionName) =>
-  ['mapping', 'scalar', 'sequence'].map((kind) => yamlType(functionName, kind)),
+  kinds.map((kind) => yamlType(functionName, kind)),
 )
 
-const cloudformationSchema = yaml.DEFAULT_SCHEMA.extend(types)
-
-export default cloudformationSchema
+export const cloudformationSchema = yaml.DEFAULT_SCHEMA.extend(types)

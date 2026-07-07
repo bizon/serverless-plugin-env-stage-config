@@ -1,5 +1,5 @@
 allowBuilds:
-  es5-ext: false
+  "@swc/core": false
   unrs-resolver: false
 
 minimumReleaseAge: 0
