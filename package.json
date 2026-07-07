@@ -1,31 +1,57 @@
 {
   "name": "serverless-plugin-env-stage-config",
   "version": "1.4.1",
-  "description": "Serverless plugin to define environment variables files for stages",
+  "description": "osls (Serverless Framework v3) plugin to define environment variable files for stages",
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
   "repository": "https://github.com/bizon/serverless-plugin-env-stage-config",
   "type": "module",
-  "exports": "./index.js",
+  "sideEffects": false,
+  "source": "./src/index.ts",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.mts",
+      "default": "./dist/index.mjs"
+    }
+  },
   "files": [
-    "cloudformation-schema.js",
-    "index.js"
+    "dist"
   ],
   "engines": {
     "node": ">=24"
   },
   "license": "MIT",
   "keywords": [
+    "osls",
     "serverless",
     "serverless-plugin"
   ],
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "check:ts": "tsc --noEmit",
+    "build": "tsdown",
+    "dev": "tsdown --watch"
+  },
   "dependencies": {
-    "js-yaml": "^5.2.1"
+    "js-yaml": "^4.1.0"
   },
   "devDependencies": {
     "@bizon/semantic-release-config": "^3.1.0",
-    "eslint-config-xo-bizon": "^4.2.0",
+    "@jest/globals": "^30.4.1",
+    "@swc/core": "^1.15.40",
+    "@swc/jest": "^0.2.39",
+    "@tsconfig/node24": "^24.0.4",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^24.12.4",
+    "eslint-config-xo-bizon": "^4.4.0",
+    "jest": "^30.4.2",
+    "jest-junit": "^17.0.0",
     "semantic-release": "^25.0.5",
-    "xo": "^2.0.2"
+    "ts-node": "^10.9.2",
+    "tsdown": "^0.22.3",
+    "typescript": "^6.0.3",
+    "xo": "^3.0.2"
   },
   "release": {
     "extends": "@bizon/semantic-release-config"
