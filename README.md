@@ -1,6 +1,7 @@
 # serverless-plugin-env-stage-config
 
 [![npm version](https://badgen.net/npm/v/serverless-plugin-env-stage-config)](https://www.npmjs.com/package/serverless-plugin-env-stage-config)
+[![codecov](https://codecov.io/github/bizon/serverless-plugin-env-stage-config/graph/badge.svg?token=jtThT4jmen)](https://codecov.io/github/bizon/serverless-plugin-env-stage-config)
 [![XO code style](https://badgen.net/badge/code%20style/XO/cyan)](https://github.com/xojs/xo)
 
 This plugin for [**osls**](https://github.com/oss-serverless/osls) (Open Source ServerLeSs) lets you define environment variable configuration files for stages.
@@ -14,7 +15,6 @@ For development stages (`local`, `dev`, `development`), the variables will defau
 
 [![Tests](https://github.com/bizon/serverless-plugin-env-stage-config/actions/workflows/tests.yml/badge.svg)](https://github.com/bizon/serverless-plugin-env-stage-config/actions/workflows/tests.yml)
 [![Release](https://github.com/bizon/serverless-plugin-env-stage-config/actions/workflows/release.yml/badge.svg)](https://github.com/bizon/serverless-plugin-env-stage-config/actions/workflows/release.yml)
-[![codecov](https://codecov.io/github/bizon/serverless-plugin-env-stage-config/graph/badge.svg?token=jtThT4jmen)](https://codecov.io/github/bizon/serverless-plugin-env-stage-config)
 
 ## Installation
 
