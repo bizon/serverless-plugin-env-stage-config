@@ -1,6 +1,6 @@
 {
   "name": "serverless-plugin-env-stage-config",
-  "version": "1.4.1",
+  "version": "2.0.0",
   "description": "osls (Serverless Framework v3) plugin to define environment variable files for stages",
   "author": "Bertrand Marron <bertrand.marron@gmail.com>",
   "repository": "https://github.com/bizon/serverless-plugin-env-stage-config",
